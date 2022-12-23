@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView13" type="id" />
+    <item name="imageView15" type="id" />
+    <item name="imageView7" type="id" />
+    <item name="button" type="id" />
+    <item name="button2" type="id" />
+    <item name="emailtxt" type="id" />
+    <item name="passwordtxt" type="id" />
+    <item name="next" type="id" />
+</resources>

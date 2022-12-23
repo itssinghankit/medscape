@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,7 +14,19 @@
             android:id="@+id/hospitalphoto"
             android:src="@drawable/purplecircle"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"/>
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="@id/hospitalphoto"
+            app:layout_constraintTop_toTopOf="@id/hospitalphoto"
+            app:layout_constraintBottom_toBottomOf="@id/hospitalphoto"
+            app:layout_constraintRight_toRightOf="@id/hospitalphoto"
+            android:textColor="@color/white"/>
 
         <TextView
             app:layout_constraintTop_toTopOf="parent"
@@ -29,6 +41,7 @@
             android:paddingLeft="30dp"
             android:textStyle="bold"
             android:maxLines="1"/>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -54,6 +67,37 @@
         android:paddingLeft="60dp"
 
         android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="area"
+            android:textColor="@color/black"
+            android:id="@+id/area"
+            app:layout_constraintTop_toBottomOf="@id/city"
+            android:textSize="25sp"
+            android:paddingLeft="110dp"
+            android:maxLines="1"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phono no"
+        android:textColor="@color/black"
+        android:id="@+id/phoneno"
+        app:layout_constraintTop_toBottomOf="@id/area"
+        android:textSize="25sp"
+        android:paddingLeft="110dp"
+        android:maxLines="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textColor="@color/black"
+            android:id="@+id/email"
+            app:layout_constraintTop_toBottomOf="@id/phoneno"
+            android:textSize="25sp"
+            android:paddingLeft="110dp"
+            android:maxLines="1"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

@@ -7,13 +7,43 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/householdwaste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/signinup"
+        android:text="household"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <Button
+        android:id="@+id/hospitalwaste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hospital waste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/householdwaste" />
+
+    <Button
+        android:id="@+id/hospitalregisteration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hospital registeration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hospitalwaste" />
+
+    <Button
+        android:id="@+id/viewhospital"
+        android:layout_width="156dp"
+        android:layout_height="41dp"
+        android:text="view hospital"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/hospitalregisteration" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

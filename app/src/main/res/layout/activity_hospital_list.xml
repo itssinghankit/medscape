@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HospitalList">
+    tools:context=".HospitalList"
+    android:background="@color/white">
 
     <TextView
         android:layout_width="match_parent"
@@ -22,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/uppertext"
-        tools:listitem="@layout/hospitalecyitem" />
+        tools:listitem="@layout/hospitalecyitem"
+        android:id="@+id/recycler"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
